@@ -1,0 +1,25 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin pages (if any in the future)
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://ibrahimashraf.dev/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yandex
+User-agent: Yandex
+Allow: /
