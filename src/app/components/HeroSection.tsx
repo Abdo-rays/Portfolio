@@ -3,8 +3,10 @@ import { Github, Linkedin, Youtube } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const roles = [
-  "Front-end Developer",
+  "full-Stack Developer",
+  "Backend Developer",
   "React Specialist",
+  "Node.js Developer",
   "UI/UX Enthusiast",
   "Web Performance Expert",
 ];
