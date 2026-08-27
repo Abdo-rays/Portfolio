@@ -67,9 +67,9 @@ export function SEO({
           description: description,
           knowsAbout: ["React", "Next.js", "TypeScript", "JavaScript", "Web Development"],
           sameAs: [
-            "https://github.com/ibrahimashraf",
-            "https://linkedin.com/in/ibrahimashraf",
-            "https://youtube.com/@ibrahimashraf",
+            "https://github.com/Abdo-rays",
+            "https://www.linkedin.com/in/abdelrahman-mohamed-1287872a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app#",
+            "#",
           ],
           address: {
             "@type": "PostalAddress",

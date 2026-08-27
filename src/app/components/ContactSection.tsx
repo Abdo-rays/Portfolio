@@ -18,7 +18,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="py-24 bg-white dark:bg-gray-950">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,14 +47,14 @@ export function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 mb-8 border border-transparent dark:border-gray-800">
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 md:p-8 mb-8 border border-transparent dark:border-gray-800">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-white dark:bg-gray-950 rounded-lg">
                   <Mail className="size-6 dark:text-white" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Email</p>
-                  <p className="font-medium dark:text-white">abdelrahmanmohamedahmed540@gmail.com</p>
+                  <p className="font-medium dark:text-white break-all">abdelrahmanmohamedahmed540@gmail.com</p>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">phone</p>
                   <p className="font-medium dark:text-white">01009313757</p>
                 </div>
@@ -62,7 +62,7 @@ export function ContactSection() {
 
               <div className="mb-6">
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Find me on</p>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-3">
                   {[
                     { Icon: Github, label: "GitHub", href: "https://github.com/Abdo-rays" },
                     { Icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/abdelrahman-mohamed-1287872a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app#" },
@@ -97,7 +97,7 @@ export function ContactSection() {
             transition={{ duration: 0.6 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <motion.div whileFocus={{ scale: 1.02 }}>
                   <input
                     type="text"

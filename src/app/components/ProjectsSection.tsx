@@ -3,29 +3,29 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "cosmetics Website",
-    description: "cosmetics Website...",
+    title: "Rento",
+    description: "Car rental and sales platform...",
     image: "../assets/scen1.png",
-    tags: ["Html5", "css3", "js", "Api"],
-      live: " https://abdo-rays.github.io/cosmetics/",
-    code: "https://github.com/Abdo-rays/cosmetics",
+    tags: ["React", "Next.js", "js", "Api","Node.js", "Tailwind", "MongoDB"],
+      live: "https://rento-frontend-rho.vercel.app/ar",
+    code: "https://github.com/Cars-Rental/CarRental1",
   },
   {
-    title: "Shopping-Cart-Management-System",
-    description: "Shopping-Cart-Management-System",
+    title: "wagpaty",
+    description: "A platform for restaurants, allowing you to buy meals from multiple restaurants and receive discounts.",
     image: "../assets/scen2.png",
-    tags: ["React", "Tailwind", "Api"],
-     live: "  https://abdo-rays.github.io/-Shopping-Cart-Management-System/",
-    code: "https://github.com/Abdo-rays/-Shopping-Cart-Management-System",
+    tags: ["React", "Tailwind", "Api","Node.js", "js", "MongoDB"],
+     live: "https://wagpaty.vercel.app/home",
+    code: "https://github.com/Abdo-rays/wagpaty",
   
   },
   {
-    title: "travel Website",
-    description: "travel Website...",
+    title: "Pet Adoption",
+    description: "A platform for adopting pets...",
     image: "../assets/scen3.png",
-    tags: ["Angular", "Api", "Tailwind" ],
-     live: "  https://abdo-rays.github.io/travel/",
-    code: "https://github.com/Abdo-rays/travel",
+    tags: ["Node.js", "Api", "MongoDB","swagger" ],
+     live: "#",
+    code: "https://github.com/AbdelrahmanEssam17/animals-adoptation-project",
   },
 ];
 

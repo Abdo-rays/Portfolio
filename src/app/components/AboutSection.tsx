@@ -20,36 +20,48 @@ export function AboutSection() {
 
   const experience = [
     {
-      company: "Programming Instructor",
-      position: "",
-      period: "2024",
-      description:
-        "• Delivering a private programming course covering( Html5,css3,js) with ACM Team for 6 months",
+      company: "Open-Source Applications Developer Trainee",
+      position: "National Telecommunication Institute (NTI)",
+      period: "Apr 2026 – Present | Mansoura, Egypt",
+      description: [
+        "Pursuing a 540-hour Full-Stack Development training program over 4 months.",
+        "Developed full-stack applications using React, Node.js, and Express.js.",
+        "Integrated third-party services and APIs while ensuring application security.",
+        "Built and managed databases using MongoDB and MySQL.",
+        "Applied DevOps practices including Docker containerization, CI/CD pipelines.",
+        "Designed, built, and deployed a full-stack capstone project integrating frontend, backend, databases, and cloud services.",
+      ],
       gradient: "from-blue-500/20 to-transparent",
     },
     {
-      company: "National Technology Institute(NTI)",
+      company: "National Technology Institute (NTI)",
       position: "",
-      period: "2026",
-      description:
-        "•Executed full-stack web applications using MongoDB, Express.js,Angular, and Minya,EgypNode.js (210-hour training). •Improved application performance using caching techniques. •Implemented input validation using Joi to ensure data correctness and securit",
+      period: "Jan 2026 – Apr 2026 | Minya, Egypt",
+      description: [
+        "Executed full-stack web applications using MongoDB, Express.js, Angular, and Node.js (210-hour training).",
+        "Improved application performance using caching techniques.",
+        "Implemented input validation using Joi to ensure data correctness and security.",
+      ],
       gradient: "from-cyan-500/20 to-transparent",
     },
     {
-      company: "Web Design",
-      position: "",
-      period: "9/2023- 12/2023",
-      description:
-        "• National Telecommunication Institute (NTI) ) - Minya Branch",
+      company: "Programming Instructor With (ACM Team)",
+      position: "Minya University",
+      period: "Feb 2024 – Jun 2024",
+      description: [
+        "Delivered a 4-month private programming course covering HTML5, CSS3, and JavaScript.",
+        "Mentored students and helped them build a strong foundation in programming fundamentals.",
+      ],
       gradient: "from-blue-400/20 to-transparent",
     },
   ];
 
   return (
     <section id="about" className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Biography Section */}
         <motion.div
+          id="education"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -153,6 +165,7 @@ RESTful APIs
 
         {/* Education Section */}
         <motion.div
+          id="experience"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -161,15 +174,15 @@ RESTful APIs
         >
           <div className="relative">
             {/* Left Side - Title and Items */}
-            <div className="flex gap-16">
+            <div className="flex flex-col md:flex-row gap-12 md:gap-16">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="w-96"
+                className="w-full md:w-96"
               >
-                <h2 className="text-5xl font-bold mb-6 dark:text-white">EDUCATION</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white">EDUCATION</h2>
                 <motion.div
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
@@ -230,7 +243,7 @@ RESTful APIs
                   className="mb-8"
                 >
                   <h3
-                    className="text-8xl font-bold mb-8"
+                    className="text-4xl sm:text-6xl md:text-8xl font-bold mb-8"
                     style={{
                       WebkitTextStroke: "2px rgba(255, 255, 255, 0.3)",
                       color: "transparent",
@@ -273,7 +286,7 @@ RESTful APIs
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-5xl font-bold mb-6 dark:text-white">EXPERIENCE</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white">EXPERIENCE</h2>
               <motion.div
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
@@ -317,9 +330,11 @@ RESTful APIs
 
                     {/* Description Card */}
                     <div className="ml-14 p-6 bg-gray-800/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700">
-                      <p className="text-gray-300 dark:text-gray-300 leading-relaxed">
-                        {exp.description}
-                      </p>
+                      <ul className="list-disc space-y-2 pl-5 text-gray-300 dark:text-gray-300 leading-relaxed">
+                        {exp.description.map((item, itemIndex) => (
+                          <li key={itemIndex}>{item}</li>
+                        ))}
+                      </ul>
                     </div>
                   </motion.div>
                 ))}
@@ -342,7 +357,7 @@ RESTful APIs
                 transition={{ delay: 0.3 }}
               >
                 <h3
-                  className="text-8xl font-bold"
+                  className="text-4xl sm:text-6xl md:text-8xl font-bold"
                   style={{
                     WebkitTextStroke: "2px rgba(255, 255, 255, 0.3)",
                     color: "transparent",

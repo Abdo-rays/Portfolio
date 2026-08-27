@@ -22,7 +22,7 @@ export function HeroSection() {
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 dark:bg-gray-950">
-      <div className="max-w-7xl mx-auto px-6 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -44,7 +44,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-6xl font-bold mb-6 dark:text-white"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 dark:text-white"
             > 
               Abdelrahman mohamed Ahmed
             </motion.h1>
@@ -53,7 +53,7 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="h-16 mb-6"
+              className="min-h-16 mb-6"
             >
               <motion.p
                 key={currentRole}
@@ -61,7 +61,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="text-2xl text-gray-600 dark:text-gray-400"
+                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400"
               >
                 {roles[currentRole]} crafting fast & accessible web interfaces
               </motion.p>
@@ -81,22 +81,26 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex gap-4 mb-8"
+              className="flex flex-col sm:flex-row gap-4 mb-8"
             >
-              <motion.button
+              <motion.a
+                href="#projects"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg font-medium"
+                className="w-full sm:w-auto px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg font-medium text-center"
               >
                 View My Work
-              </motion.button>
-              <motion.button
+              </motion.a>
+              <motion.a
+                href="https://flowcv.com/resume/8hnv53cbnr76"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 border border-gray-300 dark:border-gray-700 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-900 dark:text-white"
+                className="w-full sm:w-auto px-8 py-3 border border-gray-300 dark:border-gray-700 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-900 dark:text-white text-center"
               >
                 View CV
-              </motion.button>
+              </motion.a>
             </motion.div>
 
             <motion.div
@@ -145,7 +149,7 @@ export function HeroSection() {
               <img
                 src="../assets/por.jpg"
                 alt="Abdelrahman Mohamed - Full-stack Developer"
-                className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+                className="relative rounded-3xl shadow-2xl w-full h-[350px] sm:h-[500px] object-cover"
               />
             </motion.div>
           </motion.div>
