@@ -2,8 +2,6 @@
 
 > A modern, fast, and SEO-optimized portfolio built with React, Motion, and Tailwind CSS
 
-![Portfolio Preview](https://images.unsplash.com/photo-1737575655055-e3967cbefd03?w=1200&h=630&fit=crop)
-
 ---
 
 ## ✨ Features
